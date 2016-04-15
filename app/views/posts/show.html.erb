@@ -1,0 +1,30 @@
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="post-preview">
+<h1 class="post-title">
+<%= @post.title %>
+</h1>
+
+<p class="post-meta">
+Submitted by admin at <%= time_ago_in_words(@post.created_at) %> Ago 
+<% if user_signed_in? %> 
+| <%= link_to 'Edit', edit_post_path(@post) %>
+| <%= link_to 'Delete', post_path(@post), method: :delete, data: {confirm: "Are you sure"} %>
+<% end %>
+</p>
+
+<p class="post-body">
+<%= raw(@post.body) %>
+</p>
+<div class="comments">
+	<h2><%= @post.comments.count %> Comments </h2>
+	<%= render @post.comments %>
+	</div>
+	<h3> Add a comment </h3>
+	    <%= render "comments/form" %>
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,16 @@
+<% @posts.each do |post| %>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="post-preveiw">
+<h3 class="post-title">
+<%= link_to post.title, post %>
+</h3>
+<p class="post-meta"><%= raw(post.sub_title) %> </p>
+<p class="post-meta"><%= post.created_at.strftime("%b, %d, %y") %></p>
+
+</div>
+</div>
+</div>
+</div>
+<% end %>
