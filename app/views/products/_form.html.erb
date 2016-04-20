@@ -1,0 +1,31 @@
+<%=form_for :product, url: products_path, :html => {:class => "form-horizontal center"} do |f| %>
+<div class="form-group">
+  <div class="col-md-8">
+    <%= f.text_field :title, class: "form-control", placeholder: " Your ProjectTitele" %>
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-md-8">
+    <%= f.text_field :order, class: "form-control", placeholder: "Your Order title/request" %>
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-md-8">
+    <%= f.cktext_area :description, class: "form-control", :rows => 5, :cols => 18 %>
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-md-8">
+    <%= f.text_field :delivery, class: "form-control", placeholder: "how urgent do you need your delivery" %>
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-md-8">
+    <%= f.text_field :price, class: "form-control", placeholder: "price in btc" %>
+  </div>
+</div>
+
+<div class="col-md-8">
+  <%= f.submit :submit, class: "btn btn-default" %>
+</div>
+<% end %>

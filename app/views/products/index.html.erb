@@ -1,0 +1,28 @@
+<header class="intro-header" style="background-image:  url('../assets/1.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1 style="color: white">Recent orders</h1>
+                    <hr class="small">
+                    <span class="subheading"> New And Completed Orders And Reviews</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="fh5co-pricing" data-section="pricing">
+  <div class="container">
+    <div class="row">
+      <% @products.each do |product| %>
+      <div class="col-md-8   to-animate fh5co-figure">
+
+          <h3 class="fh5co-figure-lead text-center"><%= link_to product.title, product %></h3>
+          <p class="fh5co-figure-text text-center"><%= raw(product.description) %></p>
+
+      </div>
+      <% end %>
+    </div>
+    </div>
+    </div>
