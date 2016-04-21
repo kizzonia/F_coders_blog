@@ -35,7 +35,7 @@ gem 'bxslider-rails', '~> 4.2', '>= 4.2.5.1'
 gem "font-awesome-rails"
 # Use Unicorn as the app server
 # gem 'unicorn'
- gem 'devise'
+ gem 'devise', '~> 3.5.4'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
