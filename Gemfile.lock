@@ -182,7 +182,7 @@ DEPENDENCIES
   ckeditor (~> 4.1, >= 4.1.6)
   coffee-rails (~> 4.1.0)
   coffee-script-source (~> 1.8.0)
-  devise (~> 3.5.5)
+  devise (~> 3.5.7)
   font-awesome-rails
   icomoon-rails
   jbuilder (~> 2.0)
