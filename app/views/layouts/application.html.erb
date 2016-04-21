@@ -50,7 +50,7 @@
                       <%= link_to "Orders", products_path %>
                     <li>
                       <%= link_to "Blog", blog_path %>
-                    <% if current_user.admin?%>
+                    <% if current_user.admin? %>
                     <li>
                     <%= link_to "Admin", new_post_path %>
                     </li>
