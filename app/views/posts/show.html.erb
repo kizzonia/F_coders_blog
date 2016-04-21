@@ -33,7 +33,7 @@ Submitted by admin at <%= time_ago_in_words(@post.created_at) %> Ago
 </p>
 
 <p class="post-body">
-<%= raw(@post.body) %>
+<%= @post.body %>
 </p>
 <div class="comments">
 	<h2><%= @post.comments.count %> Comments </h2>
