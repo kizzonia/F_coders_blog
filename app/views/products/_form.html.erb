@@ -11,7 +11,8 @@
 </div>
 <div class="form-group">
   <div class="col-md-8">
-    <%= f.cktext_area :description, class: "form-control", :rows => 5, :cols => 18 %>
+    <%= f.text_area :description, class => "tinymce", class: "form-control", :rows => 5, :cols => 18 %>
+    <%= tinymce %>
   </div>
 </div>
 <div class="form-group">

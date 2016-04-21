@@ -21,7 +21,7 @@
 //= require_tree .
 
 //= require clean-blog
-//= require ckeditor/init
+//= require tinymce
 //= require magnific-popup
 //= require jquery.countTo
 
