@@ -53,6 +53,5 @@ production:
   encoding: utf8
   pool: 50
   username: f_coders_db
-  password: forspark
   host: localhost
   timeout: 5000
