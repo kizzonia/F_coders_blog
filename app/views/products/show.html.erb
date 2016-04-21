@@ -49,7 +49,7 @@
 </div>
 
 <div class="col-lg-8 col-lg-offset-5 col-md-10 col-md-offset-2">
-  <% if user_signed_in? %>
+  <% if current_user.admin? %>
  <%= link_to 'Edit', edit_post_path(@product), class: "btn btn-default" %>
  <%= link_to 'Delete', post_path(@product), method: :delete, class: "btn btn-warning", data: {confirm: "Are you sure"} %>
   <% end %>
