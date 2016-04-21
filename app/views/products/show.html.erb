@@ -3,12 +3,54 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1 style="color: white">Request a work</h1>
+                    <h1 style="color: white">Works</h1>
                     <hr class="small">
-                    <span class="subheading"> Request Our services</span>
-                    <span class="subheading"> Remeber to type in your Email </span>
+                    <span class="subheading">work data</span>
+
                 </div>
             </div>
         </div>
     </div>
 </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <td>Date created_at </td>
+        <td> Project title </td>
+        <td> Order title </td>
+        <td> description </td>
+        <td> delivery </td>
+        <td> price </td>
+      </tr>
+    </thead>
+    <tbody>
+
+
+        <tr>
+          <td><%=  @product.created_at.strftime("%b, %d, %y") %></td>
+          <td><%= @product.title %></td>
+          <td><%= @product.order %></td>
+          <td><%= raw(@product.description) %></td>
+          <td><%= @product.delivery %></td>
+          <td><%=@product.price %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+<div class="col-lg-8 col-lg-offset-5 col-md-10 col-md-offset-2">
+  <% if user_signed_in? %>
+ <%= link_to 'Edit', edit_post_path(@product), class: "btn btn-default" %>
+ <%= link_to 'Delete', post_path(@product), method: :delete, class: "btn btn-warning", data: {confirm: "Are you sure"} %>
+  <% end %>
+</div>
