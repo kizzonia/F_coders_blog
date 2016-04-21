@@ -17,14 +17,9 @@
  *= require_self
 
  */
-
      @import "style";
      @import "clean-blog";
-
-
      @import "magnific-popup.css";
-
-
 
 a {
   text-decoration: none;
