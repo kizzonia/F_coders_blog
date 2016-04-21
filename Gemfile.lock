@@ -179,7 +179,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap (~> 4.0.0.alpha3)
   bxslider-rails (~> 4.2, >= 4.2.5.1)
-  ckeditor (~> 4.1, >= 4.1.6)
+  ckeditor
   coffee-rails (~> 4.1.0)
   coffee-script-source (~> 1.8.0)
   devise (~> 3.5.7)
