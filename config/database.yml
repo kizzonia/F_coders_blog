@@ -49,6 +49,10 @@ test:
 #
 production:
   <<: *default
-  database: F_coders_blog_production
-  username: F_coders_blog
-  password: <%= ENV['F_CODERS_BLOG_DATABASE_PASSWORD'] %>
+  adapter: porstgresql
+  encoding: utf8
+  pool: 50
+  username: f_coders_db
+  password: forspark
+  host: localhost
+  timeout: 5000

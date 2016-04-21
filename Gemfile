@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'coffee-script-source', '~> 1.8.0'
 gem 'bootstrap', '~> 4.0.0.alpha3'
+
 # Use jquery as the JavaScript library
 gem 'jquery-turbolinks'
 gem 'jquery-rails'
@@ -40,8 +41,11 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
  # gem 'byebug'
 end
-
+group :production do
+  gem 'pg'
+end
 group :development do
+  gem 'mysql2', '>= 0.3.13', '< 0.5'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
