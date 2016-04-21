@@ -1,4 +1,4 @@
-
+<%= tinymce_assets %>
 	<%= form_for :post, url: posts_path, :html => {:class => "form-horizontal center"} do |f| %>
 	<div class="form-group">
 		 <%= f.label :title, class: "col-md-1 control-label" "title:" %>
@@ -19,10 +19,11 @@
 		</div>
 		<div class="col-md-8">
 		<%= f.text_area :body, class => "tinymce", class: "form-control", :rows => 16, :cols => 16 %>
-		    <%= tinymce %>
+
 		</br>
 	</div>
 	<div class="col-md-8">
 		<%= f.submit :submit, class: "btn btn-default" %>
 	 </div>
 	 <% end %>
+<%= tinymce %>
