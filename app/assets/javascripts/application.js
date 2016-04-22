@@ -16,7 +16,6 @@
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require turbolinks
-//= require tree .
 //= require pagedown_bootstrap
 //= require pagedown_init
 //= require jquery.turbolinks
