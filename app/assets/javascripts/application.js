@@ -24,5 +24,5 @@
 //= require tinymce
 //= require magnific-popup
 //= require jquery.countTo
-
+//= require tinymce
 //= require turbolinks
