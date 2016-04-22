@@ -49,10 +49,9 @@ test:
 #
 production:
   <<: *default
-  adapter: porstgresql
+  adapter: postgresql
   encoding: utf8
   pool: 50
-  password: forspark
   username: f_coders_db
   host: localhost
   timeout: 5000
