@@ -6,7 +6,7 @@ class CreateProducts < ActiveRecord::Migration
       t.text :description
       t.integer :delivery
       t.integer :price
-
+      t.email :email
       t.timestamps null: false
     end
   end
