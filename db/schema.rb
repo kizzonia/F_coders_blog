@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20160420113742) do
     t.text     "description", limit: 65535
     t.integer  "delivery",    limit: 4
     t.integer  "price",       limit: 4
+    t.string   "email",       limit: 255
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end

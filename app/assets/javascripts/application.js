@@ -18,7 +18,7 @@
 
 //= require bootstrap-sprockets
 //= require bootstrap
-//= require_tree .
+
 
 //= require clean-blog
 //= require tinymce
