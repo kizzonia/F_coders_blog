@@ -1,18 +1,17 @@
 <%=simple_form_for @product, url: products_path do |f| %>
 
-    <%= f.input :title, class: "form-control", placeholder: " Your ProjectTitele" %>
+    <%= f.input :title, placeholder: " Your ProjectTitele" %>
 
-    <%= f.input :order, class: "form-control", placeholder: "Your Order title/request" %>
-
-    <%= f.input :description, as: :pagedown, input_html: { preview: true, rows: 10, :cols => 20 }, class: "form-control", placeholder: "What you want, and how you want it with your email address " %>
-
-
-    <%= f.input :delivery, class: "form-control", placeholder: "how urgent do you need your delivery" %>
-
-    <%= f.input :price, class: "form-control", placeholder: "price in btc" %>
+    <%= f.input :order, placeholder: "Your Order title/request" %>
+    <%= f.input :description, as: :pagedown, input_html: { preview: true, rows: 10, :cols => 20 }, placeholder: "What you want, and how you want it with your email address " %>
 
 
+    <%= f.input :delivery, placeholder: "how urgent do you need your delivery" %>
 
-  <%= f.submit :submit, class: "btn btn-default" %>
+    <%= f.input :price, placeholder: "price in btc" %>
+
+
+
+  <%= f.submit :submit %>
 
 <% end %>
