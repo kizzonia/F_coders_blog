@@ -17,9 +17,8 @@
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require clean-blog
-//= require tinymce
+//= require tinymce-jquery
 //= require magnific-popup
 //= require jquery.countTo
-//= require tinymce
 //= require turbolinks
 //= require tree .
