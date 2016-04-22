@@ -19,6 +19,6 @@
 //= require pagedown_bootstrap
 //= require pagedown_init
 //= require jquery.turbolinks
-
+//= require tree .
 //= require clean-blog
 //= require magnific-popup
