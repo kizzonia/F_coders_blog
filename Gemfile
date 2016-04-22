@@ -7,7 +7,7 @@ gem 'rails', '4.2.5'
 
   gem 'pg'
 
-
+  gem 'simple_form'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -18,7 +18,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'coffee-script-source', '~> 1.8.0'
 gem 'bootstrap', '~> 4.0.0.alpha3'
-gem 'rails_12factor', group: :production
+#gem 'rails_12factor', group: :production
 # Use jquery as the JavaScript library
 gem 'jquery-turbolinks'
 gem 'jquery-rails'
@@ -53,7 +53,7 @@ end
 group :production do
 gem 'puma'
 # Use Unicorn as the app server
-#gem 'unicorn'
+gem 'unicorn'
 
   gem "non-stupid-digest-assets"
 end
