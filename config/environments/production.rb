@@ -28,7 +28,7 @@ ActionMailer::Base.smtp_settings = {
   # NGINX, varnish or squid.
   # config.action_dispatch.rack_cache = true
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
@@ -76,8 +76,17 @@ ActionMailer::Base.smtp_settings = {
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
-  config.i18n.fallbacks = true
 
+  config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg *.ico *.eot *.ttf)
+
+    config.eager_load = true
+
+    config.action_controller.perform_caching = true
+
+
+
+    config.log_formatter = ::Logger::Formatter.new
+    config.active_record.dump_schema_after_migration = false
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
