@@ -12,17 +12,14 @@
 //
 
 //= require jquery
-
 //= require jquery.turbolinks
 //= require jquery_ujs
-
 //= require bootstrap-sprockets
 //= require bootstrap
-
-
 //= require clean-blog
 //= require tinymce
 //= require magnific-popup
 //= require jquery.countTo
 //= require tinymce
 //= require turbolinks
+//= require tree .

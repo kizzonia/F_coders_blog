@@ -94,6 +94,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
+    mysql2 (0.4.3-x86-mingw32)
     nokogiri (1.6.7.2-x86-mingw32)
       mini_portile2 (~> 2.0.0.rc2)
     non-stupid-digest-assets (1.0.8)
@@ -184,6 +185,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  mysql2
   non-stupid-digest-assets
   pg
   rails (= 4.2.5)

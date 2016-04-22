@@ -25,7 +25,7 @@ gem 'jquery-rails'
 gem 'icomoon-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-  gem 'rails_12factor'
+
 #  gem 'rack'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
@@ -35,8 +35,7 @@ gem 'bxslider-rails', '~> 4.2', '>= 4.2.5.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem "font-awesome-rails"
- # Use Unicorn as the app server
-gem 'unicorn'
+
 gem 'devise', '~> 3.5.7'
 # Use Capistrano for deployment
  #gem 'capistrano-rails', group: :development
@@ -49,13 +48,15 @@ end
   gem 'pg'
 
 group :development do
-
+  gem 'mysql2'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
 group :production do
-gem 'puma'
-  #gem 'unicorn'
+#gem 'puma'
+# Use Unicorn as the app server
+#gem 'unicorn'
+  #gem 'rails_12factor'
   gem "non-stupid-digest-assets"
 end
 
