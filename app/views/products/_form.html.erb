@@ -3,7 +3,7 @@
     <%= f.input :title, placeholder: " Your ProjectTitele" %>
 
     <%= f.input :order, placeholder: "Your Order title/request" %>
-    <%= f.input :description, as: :pagedown, input_html: { preview: true, rows: 10, :cols => 20 }, placeholder: "What you want, and how you want it with your email address " %>
+    <%= f.input :description, :as => :pagedown, :input_html => { :preview => true }, placeholder: "What you want, and how you want it with your email address " %>
 
 
     <%= f.input :delivery, placeholder: "how urgent do you need your delivery" %>
