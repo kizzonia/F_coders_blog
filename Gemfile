@@ -45,18 +45,18 @@ group :development, :test do
  # gem 'byebug'
 end
 
-  gem 'pg'
+
 
 group :development do
-  gem 'mysql2'
+  gem 'pg'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
 group :production do
-#gem 'puma'
+gem 'puma'
 # Use Unicorn as the app server
 #gem 'unicorn'
-  #gem 'rails_12factor'
+  gem 'rails_12factor'
   gem "non-stupid-digest-assets"
 end
 
