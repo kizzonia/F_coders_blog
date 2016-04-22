@@ -83,7 +83,7 @@ ActionMailer::Base.smtp_settings = {
 
     config.action_controller.perform_caching = true
 
-
+config.assets.compile = true
 
     config.log_formatter = ::Logger::Formatter.new
     config.active_record.dump_schema_after_migration = false
