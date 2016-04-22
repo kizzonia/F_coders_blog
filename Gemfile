@@ -4,10 +4,10 @@ ruby '2.2.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use mysql as the database for Active Record
-gem "non-stupid-digest-assets"
+
   gem 'pg'
 
-  gem 'tinymce-rails'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -55,6 +55,7 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'unicorn'
+  gem "non-stupid-digest-assets"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
