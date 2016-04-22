@@ -20,7 +20,7 @@
      @import "pagedown_bootstrap";
      @import "style";
      @import "clean-blog";
-     @import "magnific-popup.css";
+     @import "magnific-popup";
 
 a {
   text-decoration: none;
