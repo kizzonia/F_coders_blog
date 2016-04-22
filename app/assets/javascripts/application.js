@@ -12,14 +12,13 @@
 //
 
 //= require jquery
-//= require jquery.turbolinks
 //= require jquery_ujs
-//= require bootstrap-sprockets
 //= require bootstrap
-//= require clean-blog
+//= require bootstrap-sprockets
 //= require pagedown_bootstrap
 //= require pagedown_init
-//= require magnific-popup
-//= require jquery.countTo
+//= require jquery.turbolinks
 //= require turbolinks
 //= require tree .
+//= require clean-blog
+//= require magnific-popup

@@ -13,56 +13,50 @@
     </div>
 </header>
 
-<div id="fh5co-pricing" data-section="pricing">
-  <div class="container">
-    <div class="row">
-      <% @products.each do |product| %>
-      <div class="col-md-8   to-animate fh5co-figure">
+				<div id="fh5co-pricing" data-section="pricing">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+								<h2 class="fh5co-lead animate-single pricing-animate-1">Offers for everyone</h2>
+								<p class="fh5co-sub animate-single pricing-animate-2">.</p>
+							</div>
 
-          <h3 class="fh5co-figure-lead text-center"><%= link_to product.title, product %></h3>
-          <p class="fh5co-figure-text text-center"><%= product.description %></p>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 to-animate">
+							<%= link_to new_product_path, class: "fh5co-figure" do %>
+									<span class="fh5co-price">$15<span>/topic</span></span>
+									<h3 class="fh5co-figure-lead">clear-net Research</h3>
+									<p class="fh5co-figure-text">Deep keywords research for any purpose like Project topics, assignments and  web work</p>
+								<% end %>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 to-animate">
+									<%= link_to new_product_path, class: "fh5co-figure" do %>
+									<span class="fh5co-price">$30<span>/topic/links</span></span>
+									<h3 class="fh5co-figure-lead">Deep web Research</h3>
+									<p class="fh5co-figure-text">we also offer deepweb research and links in  other for our customers to avoid scammers and fake new please not its for educational purposes</p>
+									<% end %>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 to-animate">
+								<%= link_to new_product_path, class: "fh5co-figure" do %>
+									<span class="fh5co-price">$25<span>/webmail/SMTP</span></span>
+									<h3 class="fh5co-figure-lead">Webmail/SMTP</h3>
+									<p class="fh5co-figure-text">configured and tested webmails and SMTPS are also avaliable for sell</p>
+								<% end %>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 to-animate">
 
-      </div>
-      <% end %>
-    </div>
-    </div>
-    </div>
-
-    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 to-animate">
-      <a href="#" class="fh5co-figure">
-        <span class="fh5co-price">$15<span>/topic</span></span>
-        <h3 class="fh5co-figure-lead">clear-net Research</h3>
-        <p class="fh5co-figure-text">Deep keywords research for any purpose like Project topics, assignments and  web work</p>
-      </a>
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 to-animate">
-      <a href="#" class="fh5co-figure">
-        <span class="fh5co-price">$30<span>/topic/links</span></span>
-        <h3 class="fh5co-figure-lead">Deep web Research</h3>
-        <p class="fh5co-figure-text">we also offer deepweb research and links in  other for our customers to avoid scammers and fake new please not its for educational purposes</p>
-      </a>
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 to-animate">
-      <a href="#" class="fh5co-figure">
-        <span class="fh5co-price">$25<span>/webmail/SMTP</span></span>
-        <h3 class="fh5co-figure-lead">Webmail/SMTP</h3>
-        <p class="fh5co-figure-text">configured and tested webmails and SMTPS are also avaliable for sell</p>
-      </a>
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 to-animate">
-      <a href="#" class="fh5co-figure active pricing-feature">
-        <span class="fh5co-price">$150<span>/prototype</span></span>
-        <h3 class="fh5co-figure-lead">Prototypes/cloning</h3>
-        <p class="fh5co-figure-text">for educatinal purposes we can offer to clone websites of your choice. note we only host clones on special request</p>
-      </a>
-    </div>
-    <div class="col-md-8 col-md-offset-2 to-animate">
-      <a href="#" class="fh5co-figure">
-        <span class="fh5co-price">$200<span>/Full websites</span></span>
-        <h3 class="fh5co-figure-lead">fully responsive websites</h3>
-        <p class="fh5co-figure-text">we will create and host your dreams. we will create a moblie frendily sites for you </p>
-      </a>
-    </div>
-  </div>
-</div>
-</div>
+										<%= link_to new_product_path, class: "fh5co-figure active pricing-feature" do %>
+									<span class="fh5co-price">$150<span>/prototype</span></span>
+									<h3 class="fh5co-figure-lead">Prototypes/cloning</h3>
+									<p class="fh5co-figure-text">for educatinal purposes we can offer to clone websites of your choice. note we only host clones on special request</p>
+								<% end %>
+							</div>
+							<div class="col-md-8 col-md-offset-2 to-animate">
+							<%= link_to new_product_path, class: "fh5co-figure" do %>
+									<span class="fh5co-price">$200<span>/Full websites</span></span>
+									<h3 class="fh5co-figure-lead">fully responsive websites</h3>
+									<p class="fh5co-figure-text">we will create and host your dreams. we will create a moblie frendily sites for you </p>
+								<% end %>
+							</div>
+						</div>
+					</div>
+				</div>
