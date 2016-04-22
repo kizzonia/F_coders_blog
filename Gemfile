@@ -18,7 +18,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'coffee-script-source', '~> 1.8.0'
 gem 'bootstrap', '~> 4.0.0.alpha3'
-
+gem 'rails_12factor', group: :production
 # Use jquery as the JavaScript library
 gem 'jquery-turbolinks'
 gem 'jquery-rails'
@@ -45,8 +45,6 @@ group :development, :test do
  # gem 'byebug'
 end
 
-
-
 group :development do
   gem 'pg'
   # Access an IRB console on exception pages or by using <%= console %> in views
@@ -56,7 +54,7 @@ group :production do
 gem 'puma'
 # Use Unicorn as the app server
 #gem 'unicorn'
-  gem 'rails_12factor'
+
   gem "non-stupid-digest-assets"
 end
 
