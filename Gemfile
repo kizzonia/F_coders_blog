@@ -18,7 +18,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'coffee-script-source', '~> 1.8.0'
 gem 'bootstrap', '~> 4.0.0.alpha3'
-#gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
 # Use jquery as the JavaScript library
 gem 'jquery-turbolinks'
 gem 'jquery-rails'
