@@ -1,4 +1,4 @@
-<%=form_for :product, url: products_path, :html => {:class => "form-horizontal center"} do |f| %>
+<%=simple_form_for (@product, url: products_path, {:class => "form-horizontal center"}) do |f| %>
 <div class="form-group">
   <div class="col-md-8">
     <%= f.text_field :title, class: "form-control", placeholder: " Your ProjectTitele" %>
@@ -11,7 +11,7 @@
 </div>
 <div class="form-group">
   <div class="col-md-8">
-    <%= f.text_area :description, as: :pagedown, input_html: { preview: true, rows: 10 }, class: "form-control", :cols => 18, placeholder: "What you want, and how you want it with your email address " %>
+    <%= f.input :description, as: :pagedown, input_html: { preview: true, rows: 10, :cols => 20 }, class: "form-control", placeholder: "What you want, and how you want it with your email address " %>
 
   </div>
 </div>
