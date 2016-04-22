@@ -47,13 +47,6 @@ GEM
       sass (>= 3.4.19)
     builder (3.2.2)
     bxslider-rails (4.2.5.1)
-    ckeditor (4.1.6)
-      cocaine
-      orm_adapter (~> 0.5.0)
-    climate_control (0.0.3)
-      activesupport (>= 3.0)
-    cocaine (0.5.8)
-      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -157,6 +150,8 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.2)
+    tinymce-rails (4.3.8)
+      railties (>= 3.1.1)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
@@ -179,7 +174,6 @@ PLATFORMS
 DEPENDENCIES
   bootstrap (~> 4.0.0.alpha3)
   bxslider-rails (~> 4.2, >= 4.2.5.1)
-  ckeditor
   coffee-rails (~> 4.1.0)
   coffee-script-source (~> 1.8.0)
   devise (~> 3.5.7)
@@ -192,6 +186,7 @@ DEPENDENCIES
   rails (= 4.2.5)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  tinymce-rails
   turbolinks
   tzinfo-data
   uglifier (>= 1.3.0)
