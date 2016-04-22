@@ -10,13 +10,14 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *= require icomoon-free/style
-
+ *= require pagedown_bootstrap
  *= require font-awesome
  *= require bootstrap
  *= require_tree .
  *= require_self
 
  */
+     @import "pagedown_bootstrap";
      @import "style";
      @import "clean-blog";
      @import "magnific-popup.css";

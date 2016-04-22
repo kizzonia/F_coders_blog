@@ -7,7 +7,7 @@ gem 'rails', '4.2.5'
 
   gem 'pg'
 
-  gem 'tinymce-rails'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -18,7 +18,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'coffee-script-source', '~> 1.8.0'
 gem 'bootstrap', '~> 4.0.0.alpha3'
-gem 'rails_12factor', group: :production
+#gem 'rails_12factor', group: :production
 # Use jquery as the JavaScript library
 gem 'jquery-turbolinks'
 gem 'jquery-rails'
@@ -35,7 +35,7 @@ gem 'bxslider-rails', '~> 4.2', '>= 4.2.5.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem "font-awesome-rails"
-gem 'jquery-ui-rails'
+gem 'pagedown-bootstrap-rails'
 gem 'devise', '~> 3.5.7'
 # Use Capistrano for deployment
  #gem 'capistrano-rails', group: :development

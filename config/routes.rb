@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
-
   devise_for :users
-resources :products# does not match '/products' via POST
+   resources :products
 
   get 'contact/index'
   resources :posts do
