@@ -6,7 +6,7 @@ gem 'rails', '4.2.5'
 # Use mysql as the database for Active Record
 gem 'sprockets'
   gem 'pg'
-
+gem 'jquery-ui-rails'
   gem 'simple_form'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

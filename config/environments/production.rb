@@ -1,7 +1,7 @@
 Rails.application.configure do
   config.cache_classes = true
   config.eager_load = true
-  config.assets.precompile =  ['*.js', '*.css', '*.css.erb']
+  config.assets.precompile =  ['*.js', '*.css', '*.css.erb', '*.scss']
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
@@ -29,7 +29,7 @@ ActionMailer::Base.smtp_settings = {
   config.assets.digest = true
   config.log_level = :debug
 
-  config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg *.ico *.eot *.ttf)
+  config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg *.ico *.eot *.ttf *.js)
 
     config.eager_load = true
 
