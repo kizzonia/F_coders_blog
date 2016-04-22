@@ -7,7 +7,7 @@ gem 'rails', '4.2.5'
 gem "non-stupid-digest-assets"
   gem 'pg'
   gem 'rack'
-  gem 'puma', '~> 2.3.2'
+  gem 'puma'
   gem 'tinymce-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
