@@ -96,6 +96,8 @@ GEM
     multi_json (1.11.2)
     nokogiri (1.6.7.2-x86-mingw32)
       mini_portile2 (~> 2.0.0.rc2)
+    non-stupid-digest-assets (1.0.8)
+      sprockets (>= 2.0)
     orm_adapter (0.5.0)
     pg (0.18.4-x86-mingw32)
     rack (1.6.4)
@@ -182,6 +184,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  non-stupid-digest-assets
   pg
   rails (= 4.2.5)
   sass-rails (~> 5.0)

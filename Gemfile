@@ -6,7 +6,8 @@ gem 'rails', '4.2.5'
 # Use mysql as the database for Active Record
 gem "non-stupid-digest-assets"
   gem 'pg'
-  gem 'puma'
+  gem 'rack', '~> 1.4.0'
+  gem 'puma', '~> 2.3.2'
   gem 'tinymce-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
