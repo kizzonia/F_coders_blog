@@ -1,12 +1,12 @@
-<%=simple_form_for (@product, url: products_path, {:class => "form-horizontal center"}) do |f| %>
+<%=simple_form_for (@product,{:class => "form-horizontal center"}) do |f| %>
 <div class="form-group">
   <div class="col-md-8">
-    <%= f.text_field :title, class: "form-control", placeholder: " Your ProjectTitele" %>
+    <%= f.input :title, class: "form-control", placeholder: " Your ProjectTitele" %>
   </div>
 </div>
 <div class="form-group">
   <div class="col-md-8">
-    <%= f.text_field :order, class: "form-control", placeholder: "Your Order title/request" %>
+    <%= f.input :order, class: "form-control", placeholder: "Your Order title/request" %>
   </div>
 </div>
 <div class="form-group">
@@ -17,12 +17,12 @@
 </div>
 <div class="form-group">
   <div class="col-md-8">
-    <%= f.text_field :delivery, class: "form-control", placeholder: "how urgent do you need your delivery" %>
+    <%= f.input :delivery, class: "form-control", placeholder: "how urgent do you need your delivery" %>
   </div>
 </div>
 <div class="form-group">
   <div class="col-md-8">
-    <%= f.text_field :price, class: "form-control", placeholder: "price in btc" %>
+    <%= f.input :price, class: "form-control", placeholder: "price in btc" %>
   </div>
 </div>
 
