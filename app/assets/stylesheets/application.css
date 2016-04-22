@@ -13,7 +13,6 @@
  *= require pagedown_bootstrap
  *= require font-awesome
  *= require bootstrap
- *= require_tree .
  *= require_self
 
  */
