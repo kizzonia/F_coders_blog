@@ -26,7 +26,7 @@ gem 'icomoon-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
   gem 'rails_12factor'
-  gem 'rack'
+#  gem 'rack'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -39,7 +39,7 @@ gem "font-awesome-rails"
 gem 'unicorn'
 gem 'devise', '~> 3.5.7'
 # Use Capistrano for deployment
- gem 'capistrano-rails', group: :development
+ #gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -54,8 +54,8 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 group :production do
-
-  gem 'unicorn'
+gem 'puma'
+  #gem 'unicorn'
   gem "non-stupid-digest-assets"
 end
 
