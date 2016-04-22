@@ -1,5 +1,5 @@
-<%= tinymce_assets %>
-<%= tinymce %>
+
+
 	<%= form_for :post, url: posts_path, :html => {:class => "form-horizontal center"} do |f| %>
 	<div class="form-group">
 		 <%= f.label :title, class: "col-md-1 control-label" "title:" %>
@@ -20,7 +20,7 @@
 		</div>
 		<div class="col-md-8">
 		<%= f.text_area :body, class: "form-control tinymce", :rows => 16, :cols => 16 %>
-
+    <%= tinymce %>
 		</br>
 	</div>
 	<div class="col-md-8">

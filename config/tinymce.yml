@@ -1,10 +1,10 @@
+default:
+  plugins:
+    - image
+    - link
 
-theme_advanced_toolbar_location: top
-theme_advanced_toolbar_align: left
-theme_advanced_statusbar_location: bottom
-theme_advanced_buttons3_add:
-  - tablecontrols
-  - fullscreen
-plugins:
-  - table
-  - fullscreen
+alternate:
+  selector: textarea.table-editor
+  toolbar: styleselect | bold italic | undo redo | table
+  plugins:
+    - table
