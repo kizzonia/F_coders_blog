@@ -1,0 +1,516 @@
+/* line 1, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+body {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-size: 20px;
+  color: #404040;
+}
+
+/* line 6, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+/* line 10, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+p a {
+  text-decoration: underline;
+}
+
+/* line 13, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+/* line 22, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+a {
+  color: #404040;
+}
+
+/* line 25, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+a:hover,
+a:focus {
+  color: #0085a1;
+}
+
+/* line 29, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+a img:hover,
+a img:focus {
+  cursor: zoom-in;
+}
+
+/* line 33, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+blockquote {
+  color: #808080;
+  font-style: italic;
+}
+
+/* line 37, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: white;
+}
+
+/* line 43, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* line 51, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.navbar-custom .navbar-brand {
+  font-weight: 800;
+}
+
+/* line 54, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 61, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  /* line 65, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom .navbar-brand {
+    color: white;
+    padding: 20px;
+  }
+
+  /* line 69, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom .navbar-brand:hover,
+  .navbar-custom .navbar-brand:focus {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  /* line 73, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom .nav li a {
+    color: black;
+    padding: 20px;
+  }
+
+  /* line 77, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom .nav li a:hover,
+  .navbar-custom .nav li a:focus {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+@media only screen and (min-width: 1170px) {
+  /* line 83, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  /* line 96, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -61px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #f2f2f2;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  /* line 106, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom.is-fixed .navbar-brand {
+    color: #404040;
+  }
+
+  /* line 109, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom.is-fixed .navbar-brand:hover,
+  .navbar-custom.is-fixed .navbar-brand:focus {
+    color: #0085a1;
+  }
+
+  /* line 113, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom.is-fixed .nav li a {
+    color: #404040;
+  }
+
+  /* line 116, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom.is-fixed .nav li a:hover,
+  .navbar-custom.is-fixed .nav li a:focus {
+    color: #0085a1;
+  }
+
+  /* line 120, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .navbar-custom.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+/* line 129, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.intro-header {
+  background-color: #808080;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 50px;
+}
+
+/* line 140, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading {
+  padding: 100px 0 50px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 147, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .intro-header .site-heading,
+  .intro-header .post-heading,
+  .intro-header .page-heading {
+    padding: 150px 0;
+  }
+}
+/* line 153, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.intro-header .site-heading,
+.intro-header .page-heading {
+  text-align: center;
+}
+
+/* line 157, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.intro-header .site-heading h1,
+.intro-header .page-heading h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+/* line 162, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.intro-header .site-heading .subheading,
+.intro-header .page-heading .subheading {
+  font-size: 24px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 172, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .intro-header .site-heading h1,
+  .intro-header .page-heading h1 {
+    font-size: 80px;
+  }
+}
+/* line 177, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.intro-header .post-heading h1 {
+  font-size: 35px;
+}
+
+/* line 180, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.intro-header .post-heading .subheading,
+.intro-header .post-heading .meta {
+  line-height: 1.1;
+  display: block;
+}
+
+/* line 185, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.intro-header .post-heading .subheading {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  margin: 10px 0 30px;
+  font-weight: 600;
+}
+
+/* line 191, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.intro-header .post-heading .meta {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* line 197, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.intro-header .post-heading .meta a {
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 201, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .intro-header .post-heading h1 {
+    font-size: 55px;
+  }
+
+  /* line 204, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .intro-header .post-heading .subheading {
+    font-size: 30px;
+  }
+}
+/* line 208, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.post-preview > a {
+  color: #404040;
+}
+
+/* line 211, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.post-preview > a:hover,
+.post-preview > a:focus {
+  text-decoration: none;
+  color: #0085a1;
+}
+
+/* line 216, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.post-preview > a > .post-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* line 221, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.post-preview > a > .post-subtitle {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+/* line 226, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.post-preview > .post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+/* line 232, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.post-preview > .post-meta > a {
+  text-decoration: none;
+  color: #404040;
+}
+
+/* line 236, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.post-preview > .post-meta > a:hover,
+.post-preview > .post-meta > a:focus {
+  color: #0085a1;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 242, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+  .post-preview > a > .post-title {
+    font-size: 36px;
+  }
+}
+/* line 246, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.section-heading {
+  font-size: 36px;
+  margin-top: 60px;
+  font-weight: 700;
+}
+
+/* line 251, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.caption {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  font-style: italic;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* line 261, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+footer {
+  padding: 50px 0 65px;
+}
+
+/* line 264, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+footer .list-inline {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 268, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+footer .copyright {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* line 273, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.floating-label-form-group {
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* line 280, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  z-index: 1;
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 1.5em;
+  background: none;
+  box-shadow: none !important;
+  resize: none;
+}
+
+/* line 293, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.floating-label-form-group label {
+  display: block;
+  z-index: 0;
+  position: relative;
+  top: 2em;
+  margin: 0;
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0;
+  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
+  -moz-transition: top 0.3s ease,opacity 0.3s ease;
+  -ms-transition: top 0.3s ease,opacity 0.3s ease;
+  transition: top 0.3s ease,opacity 0.3s ease;
+}
+
+/* line 310, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1;
+}
+
+/* line 314, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.floating-label-form-group-with-focus label {
+  color: #0085a1;
+}
+
+/* line 317, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #eeeeee;
+}
+
+/* line 320, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.btn {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  padding: 15px 25px;
+}
+
+/* line 329, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.btn-lg {
+  font-size: 16px;
+  padding: 25px 35px;
+}
+
+/* line 333, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.btn-default:hover,
+.btn-default:focus {
+  background-color: none;
+  border: 1px solid #0085a1;
+  color: white;
+}
+
+/* line 339, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.pager {
+  margin: 20px 0 0;
+}
+
+/* line 342, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.pager li > a,
+.pager li > span {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 15px 25px;
+  background-color: white;
+  border-radius: 0;
+}
+
+/* line 353, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.pager li > a:hover,
+.pager li > a:focus {
+  color: white;
+  background-color: #0085a1;
+  border: 1px solid #0085a1;
+}
+
+/* line 359, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #808080;
+  background-color: #404040;
+  cursor: not-allowed;
+}
+
+/* line 367, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #0085a1;
+}
+
+/* line 372, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #0085a1;
+}
+
+/* line 377, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+img::selection {
+  color: white;
+  background: transparent;
+}
+
+/* line 381, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+
+/* line 385, c:/Sites/Fcoders_finished/F_coders_blog/app/assets/stylesheets/clean-blog.css.scss */
+body {
+  webkit-tap-highlight-color: #0085a1;
+}
